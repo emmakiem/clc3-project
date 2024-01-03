@@ -13,7 +13,8 @@ class CalculatorApplicationTests {
     }
     @Test
     public void testAdd(){
-        assertEquals(4, CalculatorService.add(2,2));
+        CalculatorService calculatorService = new CalculatorService();
+        assertEquals(4, calculatorService.add(2,2));
     }
 
 }
